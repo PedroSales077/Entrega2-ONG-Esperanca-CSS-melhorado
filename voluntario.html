@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voluntário | ONG Esperança Viva</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/img/favicon.png" alt="logo ONg Rsperança Viva" width="45px">
+        <span class="titulo">ONG Esperança Viva</span></a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntario.html" class="active">Voluntário</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <hr>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntario.html">Voluntário</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Seja um Voluntário</h1>
+      <p>Participe dos nossos projetos e ajude a transformar vidas.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="form-voluntario" class="formulario">
+        <div class="campo">
+          <label for="nomeVoluntario">Nome Completo*</label>
+          <input type="text" id="nomeVoluntario" name="nomeVoluntario" required>
+        </div>
+
+        <div class="campo">
+          <label for="emailVoluntario">E-mail*</label>
+          <input type="email" id="emailVoluntario" name="emailVoluntario" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefoneVoluntario">Telefone*</label>
+          <input type="tel" id="telefoneVoluntario" name="telefoneVoluntario" placeholder="(00) 00000-0000" required>
+        </div>
+
+        <div class="campo">
+          <label for="projetoSelecionado">Projeto de Interesse*</label>
+          <select id="projetoSelecionado" required>
+            <!-- Projetos serão carregados dinamicamente -->
+          </select>
+        </div>
+
+        <button type="submit" class="btn-enviar">Quero ser voluntário</button>
+      </form>
+
+      <p id="msg-voluntario" class="mensagem"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menuHamburguer.js"></script>
+
+</body>
+</html>

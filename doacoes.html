@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doações | ONG Esperança Viva</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/img/favicon.png" alt="logo ONg Rsperança Viva" width="45px">
+        <span class="titulo">ONG Esperança Viva</span></a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doacoes.html" class="active">Doações</a></li>
+        <li><a href="voluntario.html">Voluntário</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <hr>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntario.html">Voluntário</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Faça uma Doação</h1>
+      <p>Escolha um projeto e contribua para fazer a diferença.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="form-doacao" class="formulario">
+        <div class="campo">
+          <label for="nomeDoador">Nome Completo*</label>
+          <input type="text" id="nomeDoador" name="nomeDoador" required>
+        </div>
+
+        <div class="campo">
+          <label for="emailDoador">E-mail*</label>
+          <input type="email" id="emailDoador" name="emailDoador" required>
+        </div>
+
+        <div class="campo">
+          <label for="valorDoacao">Valor da Doação (R$)*</label>
+          <input type="number" id="valorDoacao" name="valorDoacao" required>
+        </div>
+
+        <div class="campo">
+          <label for="projetoDoacao">Projeto Destinatário*</label>
+          <select id="projetoDoacao" required>
+            <!-- Projetos serão carregados dinamicamente -->
+          </select>
+        </div>
+
+        <button type="submit" class="btn-enviar">Doar Agora</button>
+      </form>
+
+      <p id="msg-doacao" class="mensagem"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menuHamburguer.js"></script>
+
+</body>
+</html>

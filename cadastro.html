@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro | ONG Esperança Viva</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/img/favicon.png" alt="logo ONg Rsperança Viva" width="45px">
+        <span class="titulo">ONG Esperança Viva</span></a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html" class="active">Cadastro</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntario.html">Voluntário</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <hr>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntario.html">Voluntário</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Cadastro de Novos Projetos</h1>
+      <p>Cadastre campanhas para arrecadação e engajamento social.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="form-cadastro" class="formulario">
+        <div class="campo">
+          <label for="titulo">Título da campanha*</label>
+          <input type="text" id="titulo" name="titulo" placeholder="Ex: Alimentando Famílias" required />
+        </div>
+
+        <div class="campo">
+          <label for="descricao">Descrição*</label>
+          <textarea id="descricao" name="descricao" placeholder="Descreva os objetivos e impacto da campanha" required></textarea>
+        </div>
+
+        <div class="campo">
+          <label for="meta">Meta financeira (R$)*</label>
+          <input type="number" id="meta" name="meta" placeholder="10000" required />
+        </div>
+
+        <div class="campo">
+          <label for="imagem">URL da imagem*</label>
+          <input type="url" id="imagem" name="imagem" placeholder="https://exemplo.com/imagem.jpg" required />
+        </div>
+
+        <button type="submit" class="btn-enviar">Cadastrar Projeto</button>
+      </form>
+
+      <p id="msg-feedback" class="mensagem"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menuHamburguer.js"></script>
+
+</body>
+</html>

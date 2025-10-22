@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | ONG Esperança Viva</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/img/favicon.png" alt="logo ONg Rsperança Viva" width="45px">
+        <span class="titulo">ONG Esperança Viva</span></a>
+      <ul class="menu">
+        <li><a href="index.html" >Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntario.html">Voluntário</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu-mobile">
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <hr>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="doacoes.html">Doações</a></li>
+        <li><a href="voluntario.html">Voluntário</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Blog & Notícias</h1>
+      <p>Fique por dentro das novidades e conquistas da ONG.</p>
+    </section>
+
+    <section class="blog-section">
+      <div class="post" id="blogPosts">
+        <!-- Postagens carregadas dinamicamente -->
+      </div>
+
+      <div class="nova-postagem">
+        <h2>Adicionar Nova Postagem</h2>
+        <form id="form-blog">
+          <div class="campo">
+            <label for="tituloPost">Título*</label>
+            <input type="text" id="tituloPost" required>
+          </div>
+
+          <div class="campo">
+            <label for="conteudoPost">Conteúdo*</label>
+            <textarea id="conteudoPost" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">Publicar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Esperança Viva — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menuHamburguer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,611 @@
+/* =========================================
+   ONG ESPERANÇA VIVA — CSS MODERNO
+   Estratégia: Mobile First + Design Contemporâneo
+========================================= */
+
+/* ===== RESET E TIPOGRAFIA ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f9fb;
+  color: #2d2d2d;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #488478;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .logo .titulo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #488478;
+} 
+
+.navbar .menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.navbar .menu li a {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+}
+
+.navbar .menu li a:hover,
+.navbar .menu li a.active {
+  background-color: #D4903B;
+  color: #fff;
+}
+
+/* ===== BOTÃO MENU MOBILE ===== */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #488478;
+  cursor: pointer;
+}
+
+.menu.show {
+  display: flex;
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+  margin-bottom: 60px;
+}
+
+/* ===== INTRO ===== */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  color: #488478;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro-btns{
+  display: flex;
+  gap: 15px;
+}
+
+/* ===== SEÇÃO INSTITUCIONAL ===== */
+.institucional {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+}
+
+.institucional h2 {
+  color: #488478;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.institucional p {
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 1rem;
+}
+
+.institucional .card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== PROJETOS DESTAQUE ===== */
+.projetos-destaque h2 {
+  text-align: center;
+  color: #488478;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+#lista-projetos {
+  display: grid;
+  gap: 25px;
+}
+
+.card-projeto {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-projeto img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card-projeto h3 {
+  color: #488478;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card-projeto p {
+  color: #555;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== CONTATO ===== */
+.contato {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contato h2 {
+  color: #488478;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.contato p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+/* ===== FORMULÁRIOS ===== */
+.formulario .campo {
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  border-color: #488478;
+  box-shadow: 0 0 8px rgba(30, 136, 229, 0.2);
+  outline: none;
+}
+
+button.btn-enviar {
+  background-color: #D4903B;
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button.btn-enviar:hover {
+  background-color: #D4903B;
+  transform: translateY(-2px);
+}
+
+button.btn-doar {
+  background-color: #D4903B;
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button.btn-doar:hover {
+  background-color: #D4903B;
+  transform: translateY(-2px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #488478;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+
+/* ===== GRID RESPONSIVO ===== */
+@media (min-width: 650px) {
+  .navbar .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  #lista-projetos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+}
+
+@media (min-width: 1024px) {
+  #lista-projetos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* ==========================
+   BLOG POSTS
+========================== */
+.blog-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Card de Post */
+.post .card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.post .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* Imagem destacada opcional */
+.post .card .thumb {
+  width: 100%;
+  height: 180px;
+  background-color: #eaeaea;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Conteúdo do card */
+.post .card .conteudo {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.post .card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #488478;
+  line-height: 1.3;
+}
+
+.post .card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-height: 4.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post .card .data {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: auto;
+  text-align: right;
+}
+
+/* Hover sutil no título */
+.post .card:hover h3 {
+  text-decoration: underline;
+  color: #1669bb;
+}
+
+/* ==========================
+   GRID RESPONSIVO
+========================== */
+@media (min-width: 768px) {
+  .post {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .post {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ==========================
+   FORM NOVA POSTAGEM
+========================== */
+.nova-postagem {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nova-postagem h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: #488478;
+  text-align: center;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: #f9f9f9;
+  transition: border 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #488478;
+  outline: none;
+  background-color: #fff;
+}
+
+.btn-enviar {
+  background-color: #488478;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #1669bb;
+}
+
+/* ===========================
+      MENU HMBURGUER
+=========================== */
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.btn-line {
+  width: 27px;
+  height: 4px;
+  background-color: #488478;
+  transition: all 0.3s ease;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+
+.menu-btn.active .btn-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.active .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active .btn-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-mobile {
+  width: 40vw;
+  height: 55vh;
+  display: none;
+  position: absolute;
+  right: -16vw;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-mobile.active {
+  display: block;
+  transition-duration: 1s;
+}
+
+.menu-mobile ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-mobile ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.menu-mobile ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+}
+
+.menu-mobile ul li a:hover {
+  background-color: #D4903B;
+  color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+  .menu-btn {
+      display: block;
+  }
+
+  .menu-mobile {
+      top: 50px;
+  }
+  .institucional{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar .logo .titulo{
+    font-size: 1.2rem;
+  }
+}
+
