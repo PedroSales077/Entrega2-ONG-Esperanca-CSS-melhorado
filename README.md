@@ -10,17 +10,27 @@ O site da ONG Esperança Viva foi criado com o objetivo de oferecer uma experiê
 Por meio da plataforma, é possível:
 
 📖 Acompanhar notícias e postagens no Blog
+
 💬 Cadastrar voluntários e novos membros
+
 💝 Realizar doações
+
 📢 Conhecer projetos ativos da ONG
+
 A interface prioriza design minimalista e responsivo, garantindo uma navegação fluida tanto em dispositivos móveis quanto em desktops.
 
 🧰 Tecnologias Utilizadas
+
 🧭 HTML5 – Estrutura semântica e organizada das páginas.
+
 🎨 CSS3 – Estilo responsivo e minimalista, com foco em clareza e acessibilidade.
+
 ⚡ JavaScript – Interatividade e carregamento dinâmico de postagens no blog.
+
 📱 Design Responsivo – Adaptado para telas pequenas e grandes.
+
 📂 Estrutura do Projeto
+
 📁 ONG-Esperanca-Viva
 
 │
