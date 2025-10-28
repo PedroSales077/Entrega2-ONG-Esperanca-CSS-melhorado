@@ -1,6 +1,6 @@
 #Entrega2-ONG-Esperanca#
 Segunda entrega da materia Desenvolvimento Front-End Para Web - Turma_001
-Melhorado os CSS e adicionado mais responsividade
+Melhorado os CSS e adicionado mais responsividade e interação com js melhorada 
 
 🌿 ONG Esperança Viva
 Uma plataforma digital moderna e minimalista desenvolvida para aproximar a comunidade de ações sociais, permitindo acompanhar projetos, ler publicações, cadastrar voluntários e incentivar doações.
